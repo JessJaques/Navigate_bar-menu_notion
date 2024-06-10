@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .navMenu {
+            font-family: 'Advent Pro', sans-serif;
+            padding: 8px;
+            text-align: center;
+            margin: 7px auto;
+            width: fit-content;
+            background-color: #191919;
+            border: 1px solid #e0e0e0; /* Borda clara e opaca */
+            border-radius: 15px; /* Bordas arredondadas */
+            box-shadow: 0 0 10px #e0e0e0;
+        }
+
+        .navMenu a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 6px;
+            transition: color 0.3s;
+        }
+
+        .navMenu a:hover,
+        .navMenu a:focus {
+            color: #0F4527; /* Cor verde ao passar o mouse ou focar */
+        }
+
+        .background {
+            background-color: #ece5f0;
+        }
+
+        .border {
+            border: 1px solid #cccccc;
+        }
+
+        .navMenu a:active {
+            color: #0F4527; /* Cor verde ao clicar */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navMenu border">
+        <a id="menu" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Menu</a>
+        <a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Project</a>
+        <a id="courses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Courses</a>
+        <a id="language" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-language"></i> Language</a>
+        <a id="cidadania" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-flag"></i> Cidadania Italiana</a>
+        <a id="financas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Finanças</a>
+        <a id="videogame" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-gamepad"></i> Videogame</a>
+        <a id="calendar" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Calendar</a>
+    </nav>
+
+    <script>
+        function navigate(id) {
+            if (id == 'menu')
+                window.open("https://www.notion.so/2024-cec9b6a864404ebd9d7bacd3ea7a0fa1?pvs=4", '_blank').focus();
+            else if (id == "projects")
+                window.open("https://www.notion.so/c8e309a15a624ce2a41069621db64373?v=e2a953b853f946d0a955e01fecfe1cb3&pvs=4", '_blank').focus();
+            else if (id == "courses")
+                window.open("https://www.notion.so/fa72c3c28859456abcb0a5ce86dd02ba?v=9abf224362bd488e97c7457f6109fef4&pvs=4", '_blank').focus();
+            else if (id == "language")
+                window.open("https://www.notion.so/Language-Learning-Hub-052512d3cdf84e5ab5525207cc59c074?pvs=4", '_blank').focus();
+            else if (id == "cidadania")
+                window.open("https://www.notion.so/Cidadania-f3662bd899374a47bb6bbf12a01ad7b7?pvs=4", '_blank').focus();
+            else if (id == "financas")
+                window.open("https://www.notion.so/Pagamento-de-Parcelas-2-954456bd5dd64d98aa989beb43b6371b?pvs=4", '_blank').focus();
+            else if (id == "videogame")
+                window.open("https://www.notion.so/Videogames-Collection-d5ed575a0e4a49d19e97053ec20dad5a?pvs=4", '_blank').focus();
+            else if (id == "calendar")
+                window.open("https://www.notion.so/ea0f27636ea44e57adfb625d02c84cff?v=e1ded68822c541bb9240ca0b097d6eb2&pvs=4", '_blank').focus();
+        }
+    </script>
+
+</body>
+
+</html>
